@@ -5,17 +5,19 @@ html, body {
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 ul {
     list-style: none;   /* removes bullets */
     margin: 0;          /* reset default */
     padding: 0;         /* reset default */
     display: flex;      /* makes links horizontal */
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
 
 /* NAVBAR DESKTOP */
 
@@ -27,7 +29,6 @@ nav {
     color:white;
     width: 100vw; /* ensures full width */
 
-    
 }
 
 #codfiy-edu-logo {
@@ -40,7 +41,34 @@ nav ul li a {
     padding-right: 5rem;
 }
 
+/* COURSE TITLE CONTAINER*/
+
+#course-title-container {
+    padding-left: 9rem;
+}
+
+hr {
+    border-color: rgb(241,241,241);
+    width: 90rem;
+    margin-right: 10rem;
+}
+
+
+/* ANNOUNCEMENTS */
+
+#announcements {
+    padding-top: 3rem;
+    padding-left: 9rem;
+}
 
 
 
+/* CALENDAR */
+#calendar {
+    padding-top: 3rem;
+    padding-left: 9rem;
+}
 
+#calendar-table {
+    padding-top: 1rem;
+}
