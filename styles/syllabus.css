@@ -49,6 +49,7 @@ nav {
 
 #syllabus-content-container {
     padding-left: 10rem;
+    width: 70rem;
 }
 
 
@@ -63,7 +64,7 @@ padding-left: 9rem;
 
 hr {
     border-color: rgb(241,241,241);
-    width: 90rem;
+    width: 86rem;
     margin-right: 10rem;
 }
 
