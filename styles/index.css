@@ -172,4 +172,5 @@ table td:nth-child(1) {
 table td:nth-child(3) {
     width: 288px;
     height: 58px;
+    text-align: center;
 }
