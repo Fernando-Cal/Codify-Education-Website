@@ -3,36 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.styles.css">
-    <title>Codify Educaiton Website</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
+    <title>Codify Intro to Full Stack</title>
 </head>
 <body>
     <header>
     <nav>
-        <h1>Codify Education</h1>
-        <div id="navbar-links">
-        <ul>
+        <p id="codify-edu-logo">Codify Education</p>
+        <div id="navbar-links-container">
+        <ul id="navbar-links">
             <li><a href="#">Lectures</a></li>
-            <li><a href="/syllabus.html"">Syllabus</a></li>
-            <li><a href="#">Office Hours</a></li>
-            <li><a href="#"></a></li>
+            <li><a href="/src/syllabus.html">Syllabus</a></li>
+            <li><a href="/src/office-hours.html">Office Hours</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Resources</a></li>
         </ul>
         </div>
     </nav>
 
-    <h1>Intro to Full Stack Engineering</h1>
-    <p>Fall 2025: TH 6-7:30PM</p>
+    <div id="course-title-container">
+    <p id="course-title">Intro to Full Stack Engineering</p>
     <hr>
+    <p id="semester-info">Fall 2025: Thu 6-7:30PM. </p>
+    <div id="bttn-container"></div>
+    <button class="bttn" id="older-bttn" type="button">older</button>
+    <button class="bttn" id="newer-bttn" type="button">newer</button>
+    </div>
 
-    <button type="button">older</button>
-    <button type="button">newer</button>
     </header>
 
     <section id="announcements">
-        <h3>Announcements: Monday August 26th</h3>
-        <ul>
+        <p id="announcements-text">Announcements: Monday, August 26th</p>
+        <ul id="announcements-list">
             <li>Lab 10 is due tomorrow.</li>
             <li>Homework 6 is due Thursday.</li>
             <li>Scheme project checkpoint is due Thursday.</li>
@@ -40,9 +44,10 @@
     </section>
 
     <section id="calendar">
-        <h3>Current Assignments</h3>
+        <p id="current-assignments-text">Current Assignments</p>
+        <p id="calendar-text">Calendar</p>
         <table>
-            <tr>
+            <tr class="colun-text">
                 <th>Week</th>
                 <th>Date</th>
                 <th>Lecture</th>
@@ -52,6 +57,62 @@
             </tr>
             <tr>
                 <td>1</td>
+                <td>Mon<br> 6/23</td>
+                <td>Welcome</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mon 6/23</td>
+                <td>Welcome</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mon 6/23</td>
+                <td>Welcome</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mon 6/23</td>
+                <td>Welcome</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Mon 6/23</td>
+                <td>Welcome</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Mon 6/23</td>
+                <td>Welcome</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Mon 6/23</td>
+                <td>Welcome</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8</td>
                 <td>Mon 6/23</td>
                 <td>Welcome</td>
                 <td></td>
@@ -60,11 +121,5 @@
             </tr>
         </table>
     </section>
-
-
-
-
-
-    
 </body>
 </html>
