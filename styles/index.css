@@ -32,12 +32,15 @@ nav {
 }
 
 #codfiy-edu-logo {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
     padding-left: 5rem;
 }
 
 nav ul li a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-right: 5rem;
 }
 
@@ -47,12 +50,25 @@ nav ul li a {
     padding-left: 9rem;
 }
 
+#course-title {
+font-family: 'Roboto', sans-serif;   
+font-weight: 100;
+font-size: 36px;
+color: rgb(133,88,208);
+}
+
 hr {
     border-color: rgb(241,241,241);
     width: 90rem;
     margin-right: 10rem;
 }
 
+#semester-info {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+}
 
 /* ANNOUNCEMENTS */
 
