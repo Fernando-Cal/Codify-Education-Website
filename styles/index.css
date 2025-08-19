@@ -122,6 +122,11 @@ hr {
 
 }
 
+#calendar-table {
+    table-layout: fixed; /* important: this makes column widths obey your CSS */
+
+}
+
 #calendar-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -138,12 +143,13 @@ hr {
     background: none
 }
 
-
-
 .table-data {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
+}
+
+table td {
     background: rgb(233, 234, 250);
 }
