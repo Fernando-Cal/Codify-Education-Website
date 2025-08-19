@@ -135,13 +135,6 @@ hr {
     padding-top: 1.5rem;
 }
 
-.column-text {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 21px;
-    background: none
-}
 
 .table-data {
     font-family: 'Work Sans', sans-serif;
@@ -152,4 +145,12 @@ hr {
 
 table td {
     background: rgb(233, 234, 250);
+}
+
+table th {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 21px;
+    background: none
 }
