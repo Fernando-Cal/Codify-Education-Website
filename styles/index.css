@@ -5,13 +5,6 @@ html, body {
     padding: 0;
 }
 
-ul {
-    list-style: none;   /* removes bullets */
-    margin: 0;          /* reset default */
-    padding: 0;         /* reset default */
-    display: flex;      /* makes links horizontal */
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -31,7 +24,7 @@ nav {
 
 }
 
-#codfiy-edu-logo {
+#codify-edu-logo {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -39,9 +32,17 @@ nav {
     padding-left: 5rem;
 }
 
+#navbar-links {
+    list-style: none;   /* removes bullets */
+    margin: 0;          /* reset default */
+    padding: 0;         /* reset default */
+    display: flex;      /* makes links horizontal */
+}
+
 nav ul li a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-right: 5rem;
+    
 }
 
 /* COURSE TITLE CONTAINER*/
@@ -70,6 +71,9 @@ hr {
     line-height: 21px;
 }
 
+/* BUTTONS */ 
+
+
 /* ANNOUNCEMENTS */
 
 #announcements {
@@ -77,7 +81,20 @@ hr {
     padding-left: 9rem;
 }
 
+#announcements-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
 
+}
+
+#announcements-list {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+}
 
 /* CALENDAR */
 #calendar {
@@ -87,4 +104,34 @@ hr {
 
 #calendar-table {
     padding-top: 1rem;
+}
+
+#current-assignments-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+
+}
+
+#calendar-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    padding-top: 1.5rem;
+}
+
+.column-text {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.table-data {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
 }
