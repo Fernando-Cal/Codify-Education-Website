@@ -135,11 +135,15 @@ hr {
     font-weight: 700;
     font-size: 15px;
     line-height: 21px;
+    background: none
 }
+
+
 
 .table-data {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
+    background: rgb(233, 234, 250);
 }
