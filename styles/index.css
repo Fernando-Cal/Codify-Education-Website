@@ -1,3 +1,10 @@
+/* GENERAL*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -8,8 +15,9 @@ ul {
     margin: 0;          /* reset default */
     padding: 0;         /* reset default */
     display: flex;      /* makes links horizontal */
-    gap: 3rem;
 }
+
+/* NAVBAR DESKTOP */
 
 nav {
     display: flex;
@@ -17,19 +25,22 @@ nav {
     align-items: center;             /* vertically centered */
     background-color: rgb(133,88,208);
     color:white;
+    width: 100vw; /* ensures full width */
+
     
 }
 
-nav h1 {
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+#codfiy-edu-logo {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 5rem;
 }
 
 nav ul li a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 5rem;
 }
 
 
-html, body {
-    margin: 0;
-    padding: 0;
-}
+
+
+
