@@ -157,6 +157,7 @@ table th {
     font-size: 15px;
     line-height: 21px;
     background: none;
+    color: rgb(133,88,208);
 }
 
 table td:nth-child(1) {
