@@ -1,0 +1,29 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;   /* removes bullets */
+    margin: 0;          /* reset default */
+    padding: 0;         /* reset default */
+    display: flex;      /* makes links horizontal */
+    gap: 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* logo left, links right */
+    align-items: center;             /* vertically centered */
+    background-color: rgb(133,88,208);
+    color:white;
+    
+}
+
+nav h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+nav ul li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
