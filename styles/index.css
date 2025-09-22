@@ -1,176 +1,323 @@
 /* GENERAL*/
 
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+	margin: 0;
+	padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+	text-decoration: none;
+	color: white;
 }
 
 
-
-/* NAVBAR DESKTOP */
+/* NAVBAR */
 
 nav {
-    display: flex;
-    justify-content: space-between; /* logo left, links right */
-    align-items: center;             /* vertically centered */
-    background-color: rgb(133,88,208);
-    color:white;
-    width: 100vw; /* ensures full width */
-
+	display: flex;
+	justify-content: space-between;
+	/* logo left, links right */
+	align-items: center;
+	/* vertically centered */
+	background-color: rgb(133, 88, 208);
+	color: white;
+	width: 100vw;
+	/* ensures full width */
+	padding: 1rem 0;
 }
 
 #codify-edu-logo {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    padding-left: 5rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	padding-left: 2rem;
 }
 
 #navbar-links {
-    list-style: none;   /* removes bullets */
-    margin: 0;          /* reset default */
-    padding: 0;         /* reset default */
-    display: flex;      /* makes links horizontal */
+	list-style: none;
+	/* removes bullets */
+	margin: 0;
+	/* reset default */
+	padding: 0;
+	/* reset default */
+	display: flex;
+	/* makes links horizontal */
+	flex-wrap: wrap;
 }
 
 nav ul li a {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-right: 5rem;
-    
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	padding-right: 2rem;
+	display: block;
+	padding: 0.5rem 1rem;
 }
 
 /* COURSE TITLE CONTAINER*/
 
 #course-title-container {
-    padding-left: 9rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 #course-title {
-font-family: 'Roboto', sans-serif;   
-font-weight: 100;
-font-size: 36px;
-color: rgb(133,88,208);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 36px;
+	color: rgb(133, 88, 208);
 }
 
 hr {
-    border-color: rgb(241,241,241);
-    width: 90rem;
-    margin-right: 10rem;
+	border-color: rgb(241, 241, 241);
+	width: 100%;
+	max-width: 90rem;
+	margin: 1rem 0;
 }
 
 #semester-info {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 21px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 21px;
 }
 
-/* BUTTONS */ 
+/* BUTTONS */
 
 .bttn {
-    border: none;
-    width: 80px;
-    height: 34px;
-    border-radius: 4px;
-    padding: 6px 12px 6px 12px;
+	border: none;
+	width: 80px;
+	height: 34px;
+	border-radius: 4px;
+	padding: 6px 12px 6px 12px;
 }
 
 
 /* ANNOUNCEMENTS */
 
 #announcements {
-    padding-top: 3rem;
-    padding-left: 9rem;
+	padding-top: 3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 #announcements-text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 24px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 24px;
 
 }
 
 #announcements-list {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 21px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 21px;
 }
 
 /* CALENDAR */
 #calendar {
-    padding-top: 3rem;
-    padding-left: 9rem;
+	padding-top: 3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#assignment-bttn-container {
+    display: flex; 
+    justify-content: center;
+}
+#assignment-bttn {
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+	padding: 10px 36px 10px 36px;
 }
 
 #calendar-table {
-    padding-top: 1rem;
+	padding-top: 1rem;
 }
 
 #current-assignments-text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 26px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 26px;
 
 }
 
 table {
-    table-layout: fixed; /* important: this makes column widths obey your CSS */
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 21px;
+	width: 100%;
+	border-collapse: collapse;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 21px;
+	margin-top: 1rem;
 }
 
 #calendar-text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 26px;
-    padding-top: 1.5rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 26px;
+	padding-top: 1.5rem;
 }
-
 
 .table-data {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 21px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 21px;
 }
 
+#table-container {
+	width: 100%;
+	overflow-x: auto;
+	margin-top: 1rem;
+}
 
 table td {
-    background: rgb(233, 234, 250);
+	background: rgb(233, 234, 250);
+	padding: 0.5rem;
+	text-align: center;
+	border: 1px solid #ddd;
 }
 
 table th {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 21px;
-    background: none;
-    color: rgb(133,88,208);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 21px;
+	background: none;
+	color: rgb(133, 88, 208);
+	padding: 0.5rem;
+	text-align: center;
+	border: 1px solid #ddd;
 }
 
-table td:nth-child(1) {
-  width: 57px;
-  height: 258px;
-  text-align: center;
-}
- table td:nth-child(2) {
-    text-align: center;
- }
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN */
 
-table td:nth-child(3) {
-    width: 288px;
-    height: 58px;
-    text-align: center;
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+	#codify-edu-logo {
+		padding-left: 1rem;
+		font-size: 16px;
+	}
+	
+	nav ul li a {
+		padding-right: 1rem;
+		font-size: 14px;
+	}
+	
+	#course-title-container,
+	#announcements,
+	#calendar {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	
+	#course-title {
+		font-size: 28px;
+	}
+	
+	table {
+		font-size: 13px;
+	}
+	
+	table th,
+	table td {
+		padding: 0.3rem;
+	}
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+	nav {
+		flex-direction: column;
+		padding: 0.5rem 0;
+	}
+	
+	#codify-edu-logo {
+		padding-left: 0;
+		margin-bottom: 0.5rem;
+	}
+	
+	#navbar-links {
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+	}
+	
+	nav ul li a {
+		padding: 0.5rem;
+		border-bottom: 1px solid rgba(255,255,255,0.1);
+	}
+	
+	#course-title {
+		font-size: 24px;
+		text-align: center;
+	}
+	
+	#semester-info {
+		text-align: center;
+	}
+	
+	#announcements-text,
+	#current-assignments-text,
+	#calendar-text {
+		font-size: 20px;
+		text-align: center;
+	}
+	
+	table {
+		font-size: 12px;
+	}
+	
+	table th,
+	table td {
+		padding: 0.2rem;
+		font-size: 11px;
+	}
+	
+	/* Stack table cells vertically on very small screens */
+	@media screen and (max-width: 320px) {
+		table, thead, tbody, th, td, tr {
+			display: block;
+		}
+		
+		thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr {
+			border: 1px solid #ccc;
+			margin-bottom: 10px;
+		}
+		
+		td {
+			border: none;
+			position: relative;
+			padding-left: 50%;
+			text-align: left;
+		}
+		
+		td:before {
+			content: attr(data-label) ": ";
+			position: absolute;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+			font-weight: bold;
+		}
+	}
 }

@@ -1,124 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
-    <title>Codify Intro to Full Stack</title>
-</head>
-<body>
-    <header>
-    <nav>
-        <p id="codify-edu-logo"><a href="/src/index.html">Codify Education</a></p>
-        <div id="navbar-links-container">
-        <ul id="navbar-links">
-            <li><a href="#">Lectures</a></li>
-            <li><a href="/src/syllabus.html">Syllabus</a></li>
-            <li><a href="/src/office-hours.html">Office Hours</a></li>
-            <li><a href="/src/contact.html">Contact</a></li>
-            <li><a href="#">Resources</a></li>
-        </ul>
-        </div>
-    </nav>
-
-    <div id="course-title-container">
-    <p id="course-title">Intro to Full Stack Engineering</p>
-    <hr>
-    <p id="semester-info">Fall 2025: Thu 6-7:30PM. </p>
-    <div id="bttn-container"></div>
-    <button class="bttn" id="older-bttn" type="button">older</button>
-    <button class="bttn" id="newer-bttn" type="button">newer</button>
-    </div>
-
-    </header>
-
-    <section id="announcements">
-        <p id="announcements-text"></p>
-        <ul id="announcements-list">
-            
-        </ul>
-    </section>
-
-    <section id="calendar">
-        <p id="current-assignments-text">Current Assignments</p>
-        <p id="calendar-text">Calendar</p>
-        <table>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/styles/index.css">
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
+      <title>Codify Intro to Full Stack</title>
+   </head>
+   <body>
+      <header>
+         <nav>
+            <p id="codify-edu-logo"><a href="/src/index.html">Codify Education</a></p>
+            <div id="navbar-links-container">
+               <ul id="navbar-links">
+                  <li><a href="#">Lectures</a></li>
+                  <li><a href="/src/syllabus.html">Syllabus</a></li>
+                  <li><a href="/src/office-hours.html">Office Hours</a></li>
+                  <li><a href="/src/contact.html">Contact</a></li>
+               </ul>
+            </div>
+         </nav>
+         <div id="course-title-container">
+            <p id="course-title">Intro to Full Stack Engineering</p>
+            <hr>
+            <p id="semester-info">Fall 2025: Tues. 6-7:30PM. </p>
+            <div id="bttn-container"></div>
+            <button class="bttn" id="older-bttn" type="button">older</button>
+            <button class="bttn" id="newer-bttn" type="button">newer</button>
+         </div>
+      </header>
+      <section id="announcements">
+         <p id="announcements-text"></p>
+         <ul id="announcements-list">
+         </ul>
+      </section>
+      <section id="calendar">
+         <p id="current-assignments-text">Current Assignments</p>
+         <div id="assignment-bttn-container">
+            <button id="assignment-bttn"onclick="window.location.href='/assignments/project1.html'">
+            Project 1
+            </button>      
+         </div>
+         <p id="calendar-text">Calendar</p>
+         <div id="table-container">
+         <table>
             <tr class="colun-text">
-                <th>Week</th>
-                <th>Date</th>
-      0          <th>Lecture</th>
-                <th>Textbook</th>
-                <th>Lab & Dicussion Link</th>
-                <th>Homework & Project</th>
+               <th>Week</th>
+               <th>Date</th>
+               <th>Lecture</th>
+               <th>Textbook</th>
+               <th>Lab & Dicussion Link</th>
+               <th>Homework & Project</th>
             </tr>
             <tr>
-                <td>1</td>
-                <td>Mon<br> 6/23</td>
-                <td>Welcome</td>
-                <td></td>
-                <td></td>
-                <td></td>
+               <td>1</td>
+               <td>Mon<br> 9/23</td>
+               <td>HTML, CSS, Git</td>
+               <td></td>
+               <td></td>
+               <td></td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>Mon 6/23</td>
-                <td>Welcome</td>
-                <td></td>
-                <td></td>
-                <td></td>
+               <td>2</td>
+               <td>Tues. <br>9/30</td>
+               <td>JavaScript Basics</td>
+               <td></td>
+               <td></td>
+               <td></td>
             </tr>
             <tr>
-                <td>3</td>
-                <td>Mon 6/23</td>
-                <td>Welcome</td>
-                <td></td>
-                <td></td>
-                <td></td>
+               <td>3</td>
+               <td>Tues.<br> 10/7</td>
+               <td>TypeScript Basics</td>
+               <td></td>
+               <td></td>
+               <td></td>
             </tr>
             <tr>
-                <td>4</td>
-                <td>Mon 6/23</td>
-                <td>Welcome</td>
-                <td></td>
-                <td></td>
-                <td></td>
+               <td>4</td>
+               <td>Tues.<br> 10/14</td>
+               <td>React Foundations</td>
+               <td></td>
+               <td></td>
+               <td></td>
             </tr>
             <tr>
-                <td>5</td>
-                <td>Mon 6/23</td>
-                <td>Welcome</td>
-                <td></td>
-                <td></td>
-                <td></td>
+               <td>5</td>
+               <td>Tues.<br> 10/21</td>
+               <td>React Advanced: Forms + Consuming Public APIs</td>
+               <td></td>
+               <td></td>
+               <td></td>
             </tr>
             <tr>
-                <td>6</td>
-                <td>Mon 6/23</td>
-                <td>Welcome</td>
-                <td></td>
-                <td></td>
-                <td></td>
+               <td>6</td>
+               <td>Tues.<br> 10/28</td>
+               <td>Styling with Tailwind CSS and UI Libraries</td>
+               <td></td>
+               <td></td>
+               <td></td>
             </tr>
             <tr>
-                <td>7</td>
-                <td>Mon 6/23</td>
-                <td>Welcome</td>
-                <td></td>
-                <td></td>
-                <td></td>
+               <td>7</td>
+               <td>Tues.<br> 11/04</td>
+               <td>Backend I: Node and Express</td>
+               <td></td>
+               <td></td>
+               <td></td>
             </tr>
             <tr>
-                <td>8</td>
-                <td>Mon 6/23</td>
-                <td>Welcome</td>
-                <td></td>
-                <td></td>
-                <td></td>
+               <td>8</td>
+               <td>Tues.<br> </td>
+               <td>Backend II: Databases and CRUD</td>
+               <td></td>
+               <td></td>
+               <td></td>
             </tr>
-        </table>
-    </section>
-    <script src="/scripts/announcements.js"></script>
-</body>
+         </table>
+         </div>
+      </section>
+      <script src="../scripts/announcements.js"></script>
+   </body>
 </html>

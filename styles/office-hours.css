@@ -17,7 +17,7 @@ p {
     line-height: 21px;
 }
 
-/* NAVBAR DESKTOP */
+/* NAVBAR */
 
 nav {
     display: flex;
@@ -26,7 +26,7 @@ nav {
     background-color: rgb(133,88,208);
     color:white;
     width: 100vw; /* ensures full width */
-
+    padding: 1rem 0;
 }
 
 #codify-edu-logo {
@@ -34,7 +34,7 @@ nav {
     font-weight: 700;
     font-size: 18px;
     color: rgb(255, 255, 255);
-    padding-left: 5rem;
+    padding-left: 2rem;
 }
 
 #navbar-links {
@@ -42,37 +42,123 @@ nav {
     margin: 0;          /* reset default */
     padding: 0;         /* reset default */
     display: flex;      /* makes links horizontal */
+    flex-wrap: wrap;
 }
 
 nav ul li a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-right: 5rem;
-    
+    padding-right: 2rem;
+    display: block;
+    padding: 0.5rem 1rem;
 }
 
 #office-hour-title-container {
-    padding-left: 9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #office-hour-title {
-font-family: 'Roboto', sans-serif;   
-font-weight: 100;
-font-size: 36px;
-color: rgb(133,88,208);
+    font-family: 'Roboto', sans-serif;   
+    font-weight: 100;
+    font-size: 36px;
+    color: rgb(133,88,208);
 }
 
 hr {
     border-color: rgb(241,241,241);
-    width: 90rem;
-    margin-right: 10rem;
+    width: 100%;
+    max-width: 90rem;
+    margin: 1rem 0;
 }
 
 #office-hours-description-container {
-    padding-left: 9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #google-calendar-container {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;    /* Centers vertically */
+    width: 100%;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+#google-calendar-container iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN */
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+    #codify-edu-logo {
+        padding-left: 1rem;
+        font-size: 16px;
+    }
+    
+    nav ul li a {
+        padding-right: 1rem;
+        font-size: 14px;
+    }
+    
+    #office-hour-title-container,
+    #office-hours-description-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    #office-hour-title {
+        font-size: 28px;
+    }
+    
+    #google-calendar-container {
+        padding: 0 1rem;
+    }
+    
+    #google-calendar-container iframe {
+        height: 500px;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        padding: 0.5rem 0;
+    }
+    
+    #codify-edu-logo {
+        padding-left: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    #navbar-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        padding: 0.5rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    #office-hour-title {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    #office-hours-description-container {
+        text-align: center;
+    }
+    
+    #google-calendar-container iframe {
+        height: 400px;
+    }
 }

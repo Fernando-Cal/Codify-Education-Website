@@ -31,7 +31,7 @@ p, li {
     line-height: 21px;
 }
 
-/* NAVBAR DESKTOP */
+/* NAVBAR */
 
 nav {
     display: flex;
@@ -40,32 +40,35 @@ nav {
     background-color: rgb(133,88,208);
     color:white;
     width: 100vw; /* ensures full width */
-
+    padding: 1rem 0;
 }
 
 #syllabus-title-container {
-    padding-left: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #syllabus-content-container {
-    padding-left: 10rem;
-    width: 70rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
 
 #syllabus-title {
-font-family: 'Roboto', sans-serif;   
-font-weight: 100;
-font-size: 36px;
-color: rgb(133,88,208);
-padding-left: 9rem;
+    font-family: 'Roboto', sans-serif;   
+    font-weight: 100;
+    font-size: 36px;
+    color: rgb(133,88,208);
 }
-
 
 hr {
     border-color: rgb(241,241,241);
-    width: 86rem;
-    margin-right: 10rem;
+    width: 100%;
+    max-width: 90rem;
+    margin: 1rem 0;
 }
 
 #codify-edu-logo {
@@ -73,7 +76,7 @@ hr {
     font-weight: 700;
     font-size: 18px;
     color: rgb(255, 255, 255);
-    padding-left: 5rem;
+    padding-left: 2rem;
 }
 
 #navbar-links {
@@ -81,11 +84,92 @@ hr {
     margin: 0;          /* reset default */
     padding: 0;         /* reset default */
     display: flex;      /* makes links horizontal */
+    flex-wrap: wrap;
 }
 
 nav ul li a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-right: 5rem;
-   
+    padding-right: 2rem;
+    display: block;
+    padding: 0.5rem 1rem;
 }
 
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN */
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+    #codify-edu-logo {
+        padding-left: 1rem;
+        font-size: 16px;
+    }
+    
+    nav ul li a {
+        padding-right: 1rem;
+        font-size: 14px;
+    }
+    
+    #syllabus-title-container,
+    #syllabus-content-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    #syllabus-title {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    
+    h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        padding: 0.5rem 0;
+    }
+    
+    #codify-edu-logo {
+        padding-left: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    #navbar-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        padding: 0.5rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    #syllabus-title {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    p, li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
