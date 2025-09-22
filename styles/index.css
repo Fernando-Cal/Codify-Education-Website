@@ -4,6 +4,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	padding-bottom: 2rem;
 }
 
 a {
@@ -122,11 +123,28 @@ hr {
 /* BUTTONS */
 
 .bttn {
-	border: none;
-	width: 80px;
-	height: 34px;
-	border-radius: 4px;
-	padding: 6px 12px 6px 12px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, rgb(133, 88, 208), rgb(155, 118, 228));
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(133, 88, 208, 0.2);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.bttn:hover {
+    background: linear-gradient(135deg, rgb(155, 118, 228), rgb(133, 88, 208));
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(133, 88, 208, 0.3);
+}
+
+.bttn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(133, 88, 208, 0.2);
 }
 
 
@@ -167,12 +185,35 @@ hr {
 #assignment-bttn-container {
     display: flex; 
     justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
-#assignment-bttn {
+.assignment-bttn {
     border: none;
-    font-size: 18px;
-    border-radius: 6px;
-	padding: 10px 36px 10px 36px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+	padding: 12px 24px;
+	background: linear-gradient(135deg, rgb(133, 88, 208), rgb(155, 118, 228));
+	color: white;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(133, 88, 208, 0.3);
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.assignment-bttn:hover {
+	background: linear-gradient(135deg, rgb(155, 118, 228), rgb(133, 88, 208));
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(133, 88, 208, 0.4);
+	color: white;
+}
+
+.assignment-bttn:active {
+	transform: translateY(0);
+	box-shadow: 0 2px 10px rgba(133, 88, 208, 0.3);
 }
 
 #calendar-table {
@@ -216,6 +257,10 @@ table {
 	width: 100%;
 	overflow-x: auto;
 	margin-top: 1rem;
+}
+
+.txtbk-link {
+	color: rgb(133, 88, 208);
 }
 
 table td {
