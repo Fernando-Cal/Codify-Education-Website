@@ -27,6 +27,7 @@ nav {
     color:white;
     width: 100vw; /* ensures full width */
     padding: 1rem 0;
+    position: relative;
 }
 
 #codify-edu-logo {
@@ -50,6 +51,40 @@ nav ul li a {
     padding-right: 2rem;
     display: block;
     padding: 0.5rem 1rem;
+}
+
+/* HAMBURGER MENU */
+.hamburger-toggle {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-right: 2rem;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.hamburger-toggle:checked + .hamburger-menu span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-toggle:checked + .hamburger-menu span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-toggle:checked + .hamburger-menu span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 #office-hour-title-container {
@@ -97,14 +132,49 @@ hr {
 
 /* Tablet styles */
 @media screen and (max-width: 768px) {
-    #codify-edu-logo {
-        padding-left: 1rem;
-        font-size: 16px;
+    .hamburger-menu {
+        display: flex;
+    }
+    
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #navbar-links-container {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        background-color: rgb(133, 88, 208);
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 8px 8px;
+    }
+    
+    .hamburger-toggle:checked ~ #navbar-links-container {
+        display: block;
+    }
+    
+    #navbar-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0;
     }
     
     nav ul li a {
-        padding-right: 1rem;
-        font-size: 14px;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        width: 100%;
+        display: block;
+    }
+    
+    #codify-edu-logo {
+        padding-left: 1rem;
+        font-size: 16px;
     }
     
     #office-hour-title-container,
@@ -128,25 +198,51 @@ hr {
 
 /* Mobile styles */
 @media screen and (max-width: 480px) {
-    nav {
-        flex-direction: column;
-        padding: 0.5rem 0;
+    .hamburger-menu {
+        display: flex;
+        margin-right: 1rem;
     }
     
-    #codify-edu-logo {
-        padding-left: 0;
-        margin-bottom: 0.5rem;
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    
+    #navbar-links-container {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        background-color: rgb(133, 88, 208);
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 8px 8px;
+    }
+    
+    .hamburger-toggle:checked ~ #navbar-links-container {
+        display: block;
     }
     
     #navbar-links {
         flex-direction: column;
         width: 100%;
         text-align: center;
+        padding: 0;
     }
     
     nav ul li a {
-        padding: 0.5rem;
+        padding: 1rem;
         border-bottom: 1px solid rgba(255,255,255,0.1);
+        width: 100%;
+        display: block;
+    }
+    
+    #codify-edu-logo {
+        padding-left: 1rem;
+        font-size: 16px;
     }
     
     #office-hour-title {
