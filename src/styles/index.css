@@ -163,7 +163,9 @@ hr {
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 24px;
-
+	opacity: 1;
+	transform: translateY(0);
+	transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 #announcements-list {
@@ -171,6 +173,20 @@ hr {
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 21px;
+	opacity: 1;
+	transform: translateY(0);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Announcement fade animations */
+.fade-out {
+	opacity: 0 !important;
+	transform: translateY(-10px) !important;
+}
+
+.fade-in {
+	opacity: 1 !important;
+	transform: translateY(0) !important;
 }
 
 /* CALENDAR */
