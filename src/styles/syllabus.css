@@ -1,8 +1,40 @@
+/* THEME VARIABLES */
+:root {
+    /* Light mode colors */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f5f5;
+    --text-primary: #000000;
+    --text-secondary: #333333;
+    --purple-primary: rgb(133, 88, 208);
+    --purple-secondary: rgb(155, 118, 228);
+    --hr-color: rgb(241, 241, 241);
+}
+
+body.dark-mode {
+    /* Dark mode colors */
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --purple-primary: rgb(155, 118, 228);
+    --purple-secondary: rgb(175, 138, 248);
+    --hr-color: #444;
+}
+
 /* GENERAL*/
 
-html, body {
+html {
+    background-color: var(--bg-primary);
+    transition: background-color 0.3s ease;
+}
+
+body {
     margin: 0;
     padding: 0;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    min-height: 100vh;
 }
 
 a {
@@ -15,6 +47,7 @@ h2 {
     font-weight: 400;
     font-size: 30px;
     line-height: 33px;
+    color: var(--text-primary);
 }
 
 h3 {
@@ -22,6 +55,7 @@ h3 {
     font-weight: 500;
     font-size: 24px;
     line-height: 26px;
+    color: var(--text-primary);
 }
 
 p, li {
@@ -29,6 +63,51 @@ p, li {
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
+    color: var(--text-secondary);
+}
+
+/* DARK MODE TOGGLE */
+.dark-mode-toggle {
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: relative;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.dark-mode-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+.dark-mode-toggle .sun-icon,
+.dark-mode-toggle .moon-icon {
+    font-size: 20px;
+    position: absolute;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode-toggle .moon-icon {
+    opacity: 0;
+    transform: rotate(180deg);
+}
+
+body.dark-mode .dark-mode-toggle .sun-icon {
+    opacity: 0;
+    transform: rotate(-180deg);
+}
+
+body.dark-mode .dark-mode-toggle .moon-icon {
+    opacity: 1;
+    transform: rotate(0deg);
 }
 
 /* NAVBAR */
@@ -37,7 +116,7 @@ nav {
     display: flex;
     justify-content: space-between; /* logo left, links right */
     align-items: center;             /* vertically centered */
-    background-color: rgb(133,88,208);
+    background-color: var(--purple-primary);
     color:white;
     width: 100vw; /* ensures full width */
     padding: 1rem 0;
@@ -62,11 +141,11 @@ nav {
     font-family: 'Roboto', sans-serif;   
     font-weight: 100;
     font-size: 36px;
-    color: rgb(133,88,208);
+    color: var(--purple-primary);
 }
 
 hr {
-    border-color: rgb(241,241,241);
+    border-color: var(--hr-color);
     width: 100%;
     max-width: 90rem;
     margin: 1rem 0;
